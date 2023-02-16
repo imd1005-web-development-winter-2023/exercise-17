@@ -3,20 +3,74 @@
  INSTRUCTIONS
 
  ADD AND OR MODIFY YOUR CSS HERE
- WARNING: SOME OF THE FOLLOWING CSS MAY BE BROKEN!!!!!!
  YOU WILL NEED TO MODIFY THE HTML FOR THIS EXERCISE
 
 */
 
-.container {
-  margin: 0 auto;
-  max-width: 1024px;
-  padding: 0 1rem;
+/*
+
+  RESPONSIVE FLEX
+
+*/
+
+/* In mobile mode we don't need flex, we only need flex when the screen size gets too large */
+
+.flex-split {
+}
+
+.flex-split > * {
+  /* This makes our flex box items try to be their largest size */
+  width: 100%;
+}
+
+.flex-split img {
+  /* Add width so that the images take up their full space */
+
+  /* Also, aspect ratio won't work without a width decleration */
+
+  /* Add the aspect-ratio CSS property to make the image size awesome */
+}
+
+/*
+  Add a media query that targets the screen and
+  activates beyond a minimum width of 45rem
+
+  hint: min-width: 45rem
+
+  Inside that media query, redeclare flex-split
+  so that it makes your design responsive
+
+*/
+
+/*
+
+  UTILITIES
+
+*/
+
+.bg-blue-drk {
+  background-color: #003049;
+  color: #fdf0d5;
+}
+
+.bg-dark-red {
   background-color: #c1121f;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 5rem 1rem;
+}
+
+/*
+
+  CONTENT
+
+*/
+
 .intro-content {
-  padding: 6rem 0rem;
+  padding: 1rem 0rem;
   width: 50%;
   color: #fdf0d5;
 }
@@ -27,7 +81,7 @@
 
   CORE PAGE CSS
 
-  https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
+    https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
 
 */
 
@@ -48,11 +102,23 @@ header h2 {
 
 main h2 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 main section {
   margin-top: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #780000;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 800;
+  color: #fdf0d5;
 }
 
 /*
