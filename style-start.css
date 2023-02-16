@@ -1,0 +1,73 @@
+/*
+
+ INSTRUCTIONS
+
+ ADD AND OR MODIFY YOUR CSS HERE
+ WARNING: SOME OF THE FOLLOWING CSS MAY BE BROKEN!!!!!!
+ YOU WILL NEED TO MODIFY THE HTML FOR THIS EXERCISE
+
+*/
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 1rem;
+  background-color: #c1121f;
+}
+
+.intro-content {
+  padding: 6rem 0rem;
+  width: 50%;
+  color: #fdf0d5;
+}
+
+/*
+
+  DO NOT MODIFY
+
+  CORE PAGE CSS
+
+  https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
+
+*/
+
+body {
+  color: #003049;
+  font-family: sans-serif;
+  background-color: #fdf0d5;
+}
+
+header h2 {
+  padding: 2rem;
+  color: #fdf0d5;
+  text-align: center;
+  font-size: 3rem;
+
+  background-color: #003049;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main section {
+  margin-top: 2rem;
+}
+
+/*
+
+  SCREEN READER UTILITY
+
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
