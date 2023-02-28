@@ -3,7 +3,7 @@
  INSTRUCTIONS
 
  ADD AND OR MODIFY YOUR CSS HERE
- YOU WILL NEED TO MODIFY THE HTML FOR THIS EXERCISE
+ YOU DO NOT NEED TO MODIFY THE HTML FOR THIS EXERCISE
 
 */
 
@@ -14,8 +14,8 @@
 */
 
 /* In mobile mode we don't need flex, we only need flex when the screen size gets too large */
-
 .flex-split {
+  display: block;
 }
 
 .flex-split > * {
@@ -24,23 +24,41 @@
 }
 
 .flex-split img {
-  /* Add width so that the images take up their full space */
+  /* STEP 1: Add width so that the images take up their full space */
+  STEP_1_FILL_IN_HERE;
 
   /* Also, aspect ratio won't work without a width decleration */
+  aspect-ratio: 2 / 1;
 
-  /* Add the aspect-ratio CSS property to make the image size awesome */
+  /* Object fit cover helps make sure our image displays properly */
+  object-fit: cover;
 }
 
 /*
-  Add a media query that targets the screen and
-  activates beyond a minimum width of 45rem
 
-  hint: min-width: 45rem
+  Add a media query that targets the screen and
+  activates beyond a minimum width of 750px
+
+  hint: min-width: 750px
 
   Inside that media query, redeclare flex-split
   so that it makes your design responsive
 
 */
+
+@media screen and (STEP_2_FILL_IN_HERE) {
+  .flex-split {
+    /* redeclare flex-spli so that it makes your design responsive
+      by making the flex-split class have a flex display */
+    STEP_3_FILL_IN_HERE
+
+  }
+
+  .flex-split > * + * {
+    margin-left: 2rem;
+  }
+}
+
 
 /*
 
